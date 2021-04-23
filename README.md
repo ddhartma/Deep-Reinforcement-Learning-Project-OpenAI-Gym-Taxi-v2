@@ -18,6 +18,10 @@
 
     ![image1]
 
+- Read the description of the environment in subsection 3.1 of this [paper](https://arxiv.org/pdf/cs/9905014.pdf).
+
+- [Code implementation](https://github.com/openai/gym/blob/master/gym/envs/toy_text/taxi.py) (described in the paper) matches an OpenAI Gym environment 
+
 - 5-by-5 grid world
 - There are four specially-designated locations in this world, marked as R(ed), B(lue), G(reen), and Y(ellow).
 - Episodic task
