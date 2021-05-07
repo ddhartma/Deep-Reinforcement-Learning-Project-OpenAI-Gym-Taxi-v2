@@ -5,6 +5,10 @@
 ## Content
 - [Introduction](#intro)
 - [OpenAI Gym - taxi-v2 - environment](#openai_taxi)
+- [Files in the Repo](#files)
+- [Implementation - agents.py](#impl_agent)
+- [Implementation - monitor.py](#impl_momitor)
+- [Implementation - main.py](#impl_main)
 - [Setup Instructions](#Setup_Instructions)
 - [Acknowledgments](#Acknowledgments)
 - [Further Links](#Further_Links)
@@ -40,13 +44,13 @@
     - **Put**: The goal of this subtask is to move the taxi from the current location to the passenger’s destination location and drop off the passenger.
     - **Root**: This is the whole taxi task.
 
-## Files in the repo
+## Files in the repo <a name="files"></a>
 The workspace contains three files:
 - **agent.py**: The reinforcement learning agent is developed.
 - **monitor.py**: The interact function tests how well the agent learns from interaction with the environment.
 - **main.py**: Run this file in the terminal to check the performance of the agent.
 
-## Implementation - agents.py
+## Implementation - agents.py <a name="impl_agent"></a>
 - Open Python file ```agents.py```
 - Implemented method: TD control: Sarsamax (Q-Learning)
     ```
@@ -141,7 +145,7 @@ The workspace contains three files:
             self.Q[state][action] = self.update_Q(self.Q[state][action], np.max(self.Q[next_state]), reward, alpha=0.1, gamma=1)
     ```
 
-## Implementation - monitor.py
+## Implementation - monitor.py <a name="impl_momitor"></a>
 - Open Python file ```monitor.py```
     ```
     from collections import deque
@@ -211,7 +215,7 @@ The workspace contains three files:
         return avg_rewards, best_avg_reward
     ```
 
-## Implementation - main.py
+## Implementation - main.py <a name="impl_main"></a>
 - Open Python file ```main.py```
     ```
     from agent import Agent
